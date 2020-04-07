@@ -43,8 +43,6 @@ describe('The import/export dialog controller', function() {
         expect($mdDialog.hide).toHaveBeenCalled();
     });
 
-     /* test export() function */
-
     it('should export file successfully', function(){
         spyOn($mdDialog, 'hide');
 
@@ -68,9 +66,6 @@ describe('The import/export dialog controller', function() {
 
         expect(error.handle).toHaveBeenCalledWith("There are no results to export.");
     });
-
-
-    /* test import() function */
 
     it('should import file successfully', function() {    
         var element = document.createElement('input');
