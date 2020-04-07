@@ -10,11 +10,11 @@ describe('The import/export dialog controller', function() {
     var error;
     var $mdToast
     var $scope={};
-    var mockData = {group: "Somedata",
+    var mockData = { group: "Somedata",
                     source: "Somedata",
                     destination: "Somedata",
                     directed: true,
-                    class: "Somedata"};
+                    class: "Somedata" };
 
     beforeEach(inject(function($injector){ 
         $controller = $injector.get('$controller');
