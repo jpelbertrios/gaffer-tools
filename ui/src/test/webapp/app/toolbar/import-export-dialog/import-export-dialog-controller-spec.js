@@ -81,7 +81,6 @@ describe('The import/export dialog controller', function() {
         spyOn($mdToast, 'simple');
        
         $controller('ImportExportDialogController', { $scope:$scope, $mdDialog:$mdDialog, results:results, error:error, $mdToast:$mdToast});
-        
        
         $scope.import();
 
@@ -92,7 +91,9 @@ describe('The import/export dialog controller', function() {
         expect(results.update()).toEqual(mockData);
         
         $mdToast.show(toast).then(function() {
+
             expect($mdToast.simple).toHaveBeenCalled();
+
             expect($mdDialog.hide).toHaveBeenCalled();
         });
         
