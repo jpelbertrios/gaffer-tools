@@ -25,10 +25,6 @@ describe('The import/export dialog controller', function() {
 
     }));
 
-    beforeEach(function(){
-       
-    });
-
     it('should init with Import File Name as empty string', function() {
         
         $controller('ImportExportDialogController', { $scope: $scope });
